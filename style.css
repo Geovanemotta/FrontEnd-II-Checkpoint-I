@@ -4,9 +4,72 @@
     box-sizing: border-box;
 }
 
-input {
-    display: flex;
-    margin: 10px;
-    width: 200px;
-    height: 30px;
+body {
+    background-color: rgb(49, 47, 47);
 }
+#h {
+    display: flex;
+    justify-content: center;
+    background-color: blueviolet;
+}
+
+.titlecard {
+    margin-bottom: 10px;
+
+
+
+
+}
+
+.campos {
+    font: Normal 20px Arial;
+    display: flex;
+    align-items: center;
+    width: 90%;
+    margin-bottom: 10px;
+    height: 45px;
+    border-radius: 15px;
+}
+
+.card1 {
+    font: normal 20px Arial;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: aqua;
+    margin: 30px;
+    height: 500px;
+    width: 450px;
+    border-radius: 30px;
+}
+.cards {
+    display: flex;
+    justify-content: center;
+    font: normal 18px Arial;
+}
+
+#submit {
+    background-color: rgb(245, 229, 12);
+    font-size: xx-large;
+    border-radius: 8px;
+}
+
+/*---------------------------------
+    Style para pág. 2
+-----------------------------------*/
+
+.cardspg2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 80px;
+    height: 600px;    
+}
+
+#cardimg{
+    width: 40%;
+    margin-right: 20px;
+    border-radius: 30px;
+}
+
