@@ -6,26 +6,40 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="style.css" />
-t.css">
   <link rel="stylesheet" href="ericReset.css">
 <title>CheckPoint I FrontEnd II</title>
 </head>
 
 <body>
-  <h1 id="h">Bora</h1>
-  <div class="cards">
-    <div class="card1">
-      <form action="" id="formulario">
-      <h2 class="titlecard">Aqui vai o titulo</h2>
-      <input class="campos" type="text" id="campo1" placeholder="Título:"/>
-      <input class="campos" type="text" id="campo2" placeholder="Descrição:" />
-      <input class="campos" type="url" id="campo3" placeholder="URL da Imagem:" />
-      <input class="campos" type="text" id="campo4" placeholder="Outro campo:" />
-      <input class="campos" type="text" id="campo5" placeholder="Mais um campo:" />
-      <button type="submit">Salvar</button>
-    </form>
-    </div>
-  </div>
+
+  <h1 class="header">CADASTRO DE JOGOS DIGITAIS</h1>
+
+<div class="formulario">
+  <form action="" method="get" class="card">
+    <label class="tf">Título</label>
+    <input type="text" id="lname" name="title" placeholder="Título aqui..">
+
+    <label class="tf">URL</label>
+    <input type="text" id="lname" name="url" placeholder="URL da imagem..">
+
+    <label class="tf">Descrição</label> 
+    <textarea name="text" id="textarea" cols="30" rows="6"placeholder="Descrição aqui..."></textarea>
+
+    <label class="tf">Categoria</label>
+    <select id="categoria" name="categoria">
+      <option value="rpg">RPG</option>
+      <option value="openworld">Mundo Aberto</option>
+      <option value="aventura">Aventura</option>
+      <option value="terror">Terror</option>
+      <option value="coop">COOP</option>
+      <option value="sports">Esportes</option>
+    </select>
+  
+    <input type="submit" value="Enviar">
+    <input type="reset" value="Cancelar">
+  </form>
+</div>
+
   <script src="script.js"></script>
 </body>
 
