@@ -5,3 +5,12 @@ form.addEventListener("submit", (evento) => {
 
     console.log("form enviado");
 })
+
+
+    let formtitulo = document.getElementById("titleForm")
+    let valor = formtitulo.Value
+
+    console.log(valor);
+    
+        
+    

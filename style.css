@@ -63,3 +63,11 @@ input[type=text],[type=url], textarea, select {
 .tf {
   font: normal 20px arial;
 }
+
+
+@media (max-width: 800px) {
+  .formulario {
+    margin: 30px;
+  }
+  
+}
