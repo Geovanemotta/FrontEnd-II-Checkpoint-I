@@ -5,64 +5,61 @@
 }
 
 body {
-    background-color: rgb(49, 47, 47);
-}
-#h {
-    display: flex;
-    justify-content: center;
-    background-color: blueviolet;
+   background-image: url("imagens/backgroundmine.png");
+   background-repeat: no-repeat;
+   background-size: cover;
 }
 
-.titlecard {
-    margin-bottom: 10px;
+.header {
+  font: normal 40px Arial;
+  text-align: center;
+  margin: 10px;
 }
 
-.campos {
-    font: Normal 20px Arial;
-    display: flex;
-    align-items: center;
+input[type=text],[type=url], textarea, select {
     width: 100%;
-    height: 45px;
-    border-radius: 10px;
-}
-
-.card1 {
-    font: normal 20px Arial;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: aqua;
-    height: 500px;
-    width: 50%;
-    border-radius: 30px;
-}
-.cards {
-    display: flex;
-    justify-content: center;
-    font: normal 18px Arial;
-}
-
-#submit {
-    background-color: rgb(245, 229, 12);
-    font-size: xx-large;
+    padding: 12px 20px;
+    margin: 15px 0;
+    display: inline-block;
+    border: 2px solid rgb(209, 204, 204);
     border-radius: 8px;
+    resize: none;
+    font: normal 20px Arial;
+  }
+  
+  input[type=submit],[type=reset] {
+    width: 100%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+  
+  input[type=submit]:hover, [type=reset]:hover {
+    background-color: #2c7430;
+  }
+  
+  div {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+  }
+  
+.formulario {
+    margin-left: 15%;
+    margin-top: 2%;
+    margin-right: 55%;
+    border: 3px solid #2c7430; 
+    border-radius: 20px;   
 }
 
-/*---------------------------------
-    Style para pág. 2
------------------------------------*/
-
-.cardspg2 {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 80px;
-    height: 600px;    
+.card {
+  margin: 20px;
 }
 
-#cardimg{
-    width: 40%;
-    margin-right: 20px;
-    border-radius: 30px;
+.tf {
+  font: normal 20px arial;
 }
-
