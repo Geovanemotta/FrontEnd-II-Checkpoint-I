@@ -4,13 +4,12 @@ form.addEventListener("submit", (evento) => {
     evento.preventDefault()
 
     console.log("form enviado");
+    let titulo = form["title"].value
+    console.log(titulo);
 })
 
+   
 
-    let formtitulo = document.getElementById("titleForm")
-    let valor = formtitulo.Value
-
-    console.log(valor);
     
         
     
