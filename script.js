@@ -2,10 +2,10 @@ let form = document.querySelector("form")
 
 form.addEventListener("submit", (evento) => {
     evento.preventDefault()
-
-    console.log("form enviado");
     let titulo = form["title"].value
-    console.log(titulo);
+    let url = form["url"].value
+    let descript = form["description"].value
+    let category = form["categoria"].value
 })
 
    
