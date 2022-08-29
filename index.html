@@ -15,7 +15,7 @@
   <h1 class="header">CADASTRO DE JOGOS DIGITAIS</h1>
 
 <div class="formulario">
-  <form action="" method="get" class="card">
+  <form action="" method="get" class="cardDados">
     <label class="tf">Título</label>
     <input type="text" id="titleForm" name="title" placeholder="Título aqui..">
 
@@ -23,7 +23,7 @@
     <input type="text" id="urlForm" name="url" placeholder="URL da imagem..">
 
     <label class="tf">Descrição</label> 
-    <textarea name="description" id="textarea" cols="30" rows="6"placeholder="Descrição aqui..."></textarea>
+    <textarea name="description" id="textForm" cols="30" rows="6"placeholder="Descrição aqui..."></textarea>
 
     <label class="tf">Categoria</label>
     <select id="categoria" name="categoria">
@@ -35,17 +35,35 @@
       <option value="coop">COOP</option>
       <option value="sports">Esportes</option>
     </select>
-    <label for=""><input type="checkbox" name="teste" id="teste"> Teste</label>
-    <label for=""><input type="checkbox" name="teste" id="teste"> Teste2</label>
-    <label for=""><input type="checkbox" name="teste" id="teste"> Teste3</label>
-    <label for=""><input type="checkbox" name="teste" id="teste"> Teste4</label>
 
+    <button type="submit" id="submit" class="button">Enviar</button>
+    <button type="reset" id="reset" class="button">Limpar</button>
 
-    <a href="index2.html"><input type="submit" value="Enviar">link</a>
-
-    <input type="reset" value="Limpar">
   </form>
 </div>
+    <div class="dadosGaleria">
+    <div class="card">
+      <div>
+          <img class="background_card" src="imagens/chita.jpg" alt="">
+      </div>
+      <h2 class="title_card">Chita</h2>
+      <p class="description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur quia recusandae iusto libero, 
+        rerum, sapiente possimus 
+        fuga accusantium repellat officia eos. Vel iusto ut, debitis minus beatae aspernatur nam dolores.</p>
+  </div>
+
+  <div class="card">
+    <div>
+        <img class="background_card" src="imagens/chita.jpg" alt="">
+    </div>
+    <h2 class="title_card">Chita</h2>
+    <p class="description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur quia recusandae iusto libero, 
+      rerum, sapiente possimus 
+      fuga accusantium repellat officia eos. Vel iusto ut, debitis minus beatae aspernatur nam dolores.</p>
+</div>
+
+</div>
+
 
   <script src="script.js"></script>
 </body>
