@@ -5,11 +5,13 @@
    const categoriaCard = document.getElementById("categoria")
    const enviarCard = document.querySelector("#submit")
 
+   window.onload = function (){ 
 
-window.onload = function (){  
 
-   enviarCard.addEventListener('click', enviar => {
-        enviar.preventDefault()
+   enviarCard.addEventListener('click', enviar => {  
+    
+            enviar.preventDefault()
+        
             let addCard = document.createElement('div')
             addCard.innerHTML = `
             <div class="card">
@@ -18,12 +20,14 @@ window.onload = function (){
                     </div>
                     <h2 class="title_card">${tituloCard.value}</h2>
                     <p class="description">${descricaoCard.value}</p>
+                    <p class="categoriaCard">${categoriaCard.value}</p>
                 </div>
             `
             document.querySelector(".dadosGaleria").appendChild(addCard)
-   }  )
+    } )
+}   
 
-}
+
 
 
 

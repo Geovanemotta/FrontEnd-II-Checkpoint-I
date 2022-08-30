@@ -6,66 +6,123 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="style.css" />
-  <link rel="stylesheet" href="ericReset.css">
-<title>CheckPoint I FrontEnd II</title>
+  <!-- <link rel="stylesheet" href="ericReset.css"> -->
+  <title>CheckPoint I FrontEnd II</title>
 </head>
 
 <body>
+  <header class="cabecalho">
+    <div class="logo">
 
-  <h1 class="header">CADASTRO DE JOGOS DIGITAIS</h1>
-
-<div class="formulario">
-  <form action="" method="get" class="cardDados">
-    <label class="tf">Título</label>
-    <input type="text" id="titleForm" name="title" placeholder="Título aqui..">
-
-    <label class="tf">URL</label>
-    <input type="text" id="urlForm" name="url" placeholder="URL da imagem..">
-
-    <label class="tf">Descrição</label> 
-    <textarea name="description" id="textForm" cols="30" rows="6"placeholder="Descrição aqui..."></textarea>
-
-    <label class="tf">Categoria</label>
-    <select id="categoria" name="categoria">
-      <option value="escolher">-Selecionar-</option>
-      <option value="rpg">RPG</option>
-      <option value="openworld">Mundo Aberto</option>
-      <option value="aventura">Aventura</option>
-      <option value="terror">Terror</option>
-      <option value="coop">COOP</option>
-      <option value="sports">Esportes</option>
-    </select>
-
-    <button type="submit" id="submit" class="button">Enviar</button>
-    <button type="reset" id="reset" class="button">Limpar</button>
-
-  </form>
-</div>
-    <div class="dadosGaleria">
-    <div class="card">
       <div>
-          <img class="background_card" src="imagens/chita.jpg" alt="">
+        <img class="logo_img" src="imagens/logo.png" alt="">
       </div>
-      <h2 class="title_card">Chita</h2>
-      <p class="description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur quia recusandae iusto libero, 
-        rerum, sapiente possimus 
-        fuga accusantium repellat officia eos. Vel iusto ut, debitis minus beatae aspernatur nam dolores.</p>
-  </div>
 
-  <div class="card">
-    <div>
-        <img class="background_card" src="imagens/chita.jpg" alt="">
+      <h1 class="title">
+        Games Store
+      </h1>
+
     </div>
-    <h2 class="title_card">Chita</h2>
-    <p class="description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur quia recusandae iusto libero, 
-      rerum, sapiente possimus 
-      fuga accusantium repellat officia eos. Vel iusto ut, debitis minus beatae aspernatur nam dolores.</p>
-</div>
 
-</div>
+    <div>
+      <nav>
+        <ul class="main_menu">
+
+          <li class="iten_menu"> <a class="link_menu" href="#home">Home</a> </li>
+          <li class="iten_menu"> <a class="link_menu" href="#galeria">Galeria</a> </li>
+          <li class="iten_menu"> <a class="link_menu" href="#AdicionarJogos">Adicionar Jogos</a> </li>
+
+        </ul>
+      </nav>
+    </div>
+  </header>
+<section id="AdicionarJogos">
+  <div class="formulario">
+    <form action="" method="get" class="cardDados">
+      <label class="tf">Título</label>
+      <input class="tf" type="text" id="titleForm" name="title" placeholder="Título aqui..">
+
+      <label class="tf">URL</label>
+      <input class="tf" type="text" id="urlForm" name="url" placeholder="URL da imagem..">
+
+      <label class="tf">Descrição</label>
+      <textarea class="tf" name="description" id="textForm" cols="30" rows="6"
+        placeholder="Descrição aqui..."></textarea>
+
+      <label class="tf">Categoria</label>
+      <select class="tf" id="categoria" name="categoria">
+        <option value="selecionar">-Selecionar-</option>
+        <option value="RPG">RPG</option>
+        <option value="Mundo Aberto">Mundo Aberto</option>
+        <option value="Aventura">Aventura</option>
+        <option value="Terror">Terror</option>
+        <option value="Coop">COOP</option>
+        <option value="Esportes">Esportes</option>
+      </select>
+
+      <button type="submit" id="submit" class="button">Enviar</button>
+      <button type="reset" id="reset" class="button">Limpar</button>
+      <a href="index.html" target="_self"><button type="button" class="button">Reiniciar Cards</button></a>
+
+    </form>
+  </div>
+</section>
+  <section id="galeria">
+    <div class="dadosGaleria">
+      <div class="card">
+        <div>
+          <img class="background_card" src="imagens/chita.jpg" alt="">
+        </div>
+        <h2 class="title_card">Chita</h2>
+        <p class="description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur quia recusandae iusto
+          libero,
+          rerum, sapiente possimus
+          fuga accusantium repellat officia eos. Vel iusto ut, debitis minus beatae aspernatur nam dolores.</p>
+          <p class="categoriaCard">escolher</p>
+      </div>
+
+      <div class="card">
+        <div>
+          <img class="background_card" src="imagens/chita.jpg" alt="">
+        </div>
+        <h2 class="title_card">Chita</h2>
+        <p class="description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur quia recusandae iusto
+          libero,
+          rerum, sapiente possimus
+          fuga accusantium repellat officia eos. Vel iusto ut, debitis minus beatae aspernatur nam dolores.</p>
+          <p class="categoriaCard">escolher</p>
+      </div>
+
+    </div>
+  </section>
+  <footer>
+  <div class="footer_response">
+    <div class="links">
+      <a class="link_img" href="https://www.linkedin.com/in/geovane-motta-492762225/" target="_blank"><img class="float"
+          src="imagens/Linkedin.png" alt=""></a>
+      <a class="link_img" href="https://www.linkedin.com/in/geovane-motta-492762225/" target="_blank"><span
+          class="link_title">Linkedin</span></a>
+    </div>
+
+    <div class="links">
+      <a class="link_img" href="https://github.com/Geovanemotta" target="_blank"><img src="imagens/GitHub.png" alt=""></a>
+      <a class="link_img" href="https://github.com/Geovanemotta" target="_blank"><span
+          class="link_title">GitHub</span></a>
+    </div>
+
+    
+
+  </footer>
+
+    <div class="copy">
+
+      <p>Todos os direitos reservados a Front End II - Geovane Motta da Silva & Paulo Cesar dos Santos Xavier</p>
+
+    </div>
+  
 
 
-  <script src="script.js"></script>
+    <script src="script.js"></script>
 </body>
 
 </html>
