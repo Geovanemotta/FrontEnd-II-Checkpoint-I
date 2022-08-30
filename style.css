@@ -7,6 +7,13 @@
   font-family: 'Roboto', Arial, Helvetica, sans-serif;
 }
 
+body {
+  background-image: url("imagens/wallpaperbetter.com_1920x1080.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
 header {
   background: rgb(2,0,36);
   background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(3,3,5,1) 34%, rgba(0,212,255,1) 100%); 
@@ -48,7 +55,7 @@ header {
   padding-left: 70px;
   transition: 1.2s;
   cursor: pointer;
-  color: #FAD961;
+  color: #2596dd;
 }
 
 
@@ -68,6 +75,11 @@ header {
   border-radius: 10px;
   list-style: none;           
   background-image: linear-gradient(to right, #314755 0%, #26a0da  51%, #314755  100%)
+}
+
+.formulario {
+  display: flex;
+  justify-content: center;
 }
 
 .iten_menu:hover {
@@ -94,19 +106,18 @@ header {
 .cardDados {
   display: flex;
   flex-direction: column;
-  margin: 10px;
-  padding:12px 20px ;
-  margin-left: 15%;
-  margin-right: 15%;
-  border: 2px solid #2c7430; 
+  justify-content: center;
+  width: 600px;
+  border: 2px solid #ffea00; 
   border-radius: 8px;
 }
 
 .tf {
-    font: bold 30px Arial;
+    font: bold 20px Arial;
     margin: 5px;
     border-radius: 5px;   
-  
+    color: yellow;
+    background-color: #000000d8;
 }
 .restart {
   display: flex;
