@@ -3,7 +3,7 @@ const urlCard = document.getElementById("urlForm");
 const descricaoCard = document.getElementById("textForm");
 const categoriaCard = document.getElementById("categoria");
 const enviarCard = document.querySelector("#submit");
-let tagError = document.getElementById("error")
+const tagError = document.getElementById("error")
 
 
 function adicionarDadosNaPagina() {
@@ -11,10 +11,23 @@ function adicionarDadosNaPagina() {
   enviarCard.addEventListener("click", (enviar) => {
     enviar.preventDefault();
 
-    if (tituloCard.value == ""){      
-      tagError.innerText = "O campo não pode estar vazio"
+   // if (tituloCard.value == ""){      
+    //  tagError.innerText = "O campo não pode estar vazio"
       
-  }
+ // }
+        
+    tituloCard.onblur = () => {     
+    tituloCard.value = tituloCard.value.toLocaleUpperCase()
+    
+    if (tituloCard.value === "") {        
+        tagError.innerHTML = "O mínimo de caracteres é 11"
+    } else {
+        tagError.innerHTML = ""
+    }   
+
+}
+    
+    
 
     let addCard = document.createElement("div");
     addCard.innerHTML = `
