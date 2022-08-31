@@ -3,7 +3,7 @@ const urlCard = document.getElementById("urlForm");
 const descricaoCard = document.getElementById("textForm");
 const categoriaCard = document.getElementById("categoria");
 const enviarCard = document.querySelector("#submit");
-const form = document.querySelector("form")
+let form = document.querySelector("form")
 
 form.addEventListener("submit", (event) => {
     event.preventDefault()
@@ -21,7 +21,7 @@ let titulo = form["title"]
 }
 
 let url = form["url"]
-    url.onblur = () => {       
+    url.onblur = () => {    
     const tagError = url.parentElement.children[5]
     if (url.value.length < 1 ) {        
         tagError.innerHTML = "Url inválida, verique os dados!!"
@@ -35,6 +35,11 @@ function adicionarDadosNaPagina() {
   enviarCard.addEventListener("click", (enviar) => {
     enviar.preventDefault();
 
+   if (tituloCard.value < 1){      
+       alert("Verifique os campos antes de enviar!!")
+       return false      
+  }
+
     let addCard = document.createElement("div");
     addCard.innerHTML = `
             <div class="card">
@@ -45,8 +50,8 @@ function adicionarDadosNaPagina() {
                     <p class="description">${descricaoCard.value}</p>
                     <p class="categoriaCard">Categoria: ${categoriaCard.value}</p>
                 </div>
-            `
-    document.querySelector(".dadosGaleria").appendChild(addCard)
-  })
+            `;
+    document.querySelector(".dadosGaleria").appendChild(addCard);
+  });
 }
 
