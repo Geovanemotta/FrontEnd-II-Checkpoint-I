@@ -1,14 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Silkscreen&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Oooh+Baby&display=swap');
-
-
+@import url("https://fonts.googleapis.com/css2?family=Silkscreen&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Oooh+Baby&display=swap");
 
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: 'Roboto', Arial, Helvetica, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 body {
@@ -19,38 +17,42 @@ body {
 }
 
 header {
-  /* background: rgb(2,0,36);
-  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(3,3,5,1) 34%, rgba(0,212,255,1) 100%);  */
-  background: rgb(140,12,12);
-  background: linear-gradient(90deg, rgba(140,12,12,1) 0%, rgba(0,0,0,1) 0%, rgba(79,7,7,1) 36%, rgba(53,5,5,1) 50%, rgba(0,0,0,1) 100%);
+  background: rgb(140, 12, 12);
+  background: linear-gradient(
+    90deg,
+    rgba(140, 12, 12, 1) 0%,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(79, 7, 7, 1) 36%,
+    rgba(53, 5, 5, 1) 50%,
+    rgba(0, 0, 0, 1) 100%
+  );
 }
-
 
 .cabecalho {
   margin-bottom: 20px;
-  display: flex; 
+  display: flex;
   align-items: center;
   justify-content: space-between;
   box-shadow: 5px 5px 15px 5px #000000;
 }
 
-#error {
+.error {
   display: flex;
   margin-left: 10px;
   color: rgb(255, 5, 5);
-  background-color:#b3020252
+  background-color: #b3020252;
 }
 
 .logo {
   display: flex;
-  gap: 15px;            
+  gap: 15px;
   border-radius: 10px;
   margin-left: 40px;
   margin-top: 10px;
   margin-bottom: 10px;
 }
 
-.logo_img {
+.logoImg {
   border-radius: 50%;
 }
 
@@ -60,7 +62,7 @@ header {
   align-items: center;
   margin: 5px;
   color: #2596dd;
-  font-family: 'Silkscreen', cursive;
+  font-family: "Silkscreen", cursive;
 }
 
 .title:hover {
@@ -70,73 +72,71 @@ header {
   color: rgb(245, 237, 0);
 }
 
-
-.main_menu { 
+.mainMenu {
   gap: 40px;
   margin: 20px;
-  display: flex; 
-   
+  display: flex;
 }
 
-.iten_menu {
+.itenMenu {
   margin: 10px;
   padding: 15px 45px;
   text-align: center;
   text-transform: uppercase;
   transition: 0.8s;
-  background-size: 200% auto;          
-  list-style: none;           
-  background: rgb(140,12,12);
-  background: linear-gradient(90deg, rgba(140,12,12,1) 0%, rgba(0,0,0,1) 0%, rgba(112,6,6,1) 30%, rgba(207,11,11,1) 50%, rgba(79,4,4,1) 70%, rgba(0,0,0,1) 100%);
-  
+  background-size: 200% auto;
+  list-style: none;
+  background: rgb(140, 12, 12);
+  background: linear-gradient(
+    90deg,
+    rgba(140, 12, 12, 1) 0%,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(112, 6, 6, 1) 30%,
+    rgba(207, 11, 11, 1) 50%,
+    rgba(79, 4, 4, 1) 70%,
+    rgba(0, 0, 0, 1) 100%
+  );
 }
 
 .formulario {
   display: flex;
   justify-content: center;
+  margin-top: 45%;
+  margin-bottom: 20%;
 }
 
-.iten_menu:hover {
-  background-position: right center;
-  text-decoration: none;
+.itenMenu:hover {
   box-shadow: 0px 0px 5px 5px #000000;
 }
 
-.link_menu {
+.linkMenu {
   text-decoration: none;
-  font-size: 20px; 
+  font-size: 20px;
   color: #fff;
-  font-family: 'Silkscreen', cursive;
+  font-family: "Silkscreen", cursive;
 }
 
-.link_menu:hover {
+.linkMenu:hover {
   color: rgb(245, 237, 0);
 }
-
-
-.header {
-  font-size: 50px;
-  text-align: center;
-  margin: 10px;
-}
-
 .cardDados {
   display: flex;
   flex-direction: column;
   justify-content: center;
   width: 600px;
-  border: 2px solid #ffea00; 
+  border: 2px solid #ffea00;
   border-radius: 8px;
   background-color: #0000008e;
 }
 
 .tf {
-    font: bold 20px Arial;
-    margin: 5px;
-    border-radius: 5px;   
-    color: yellow;
-    background-color: #0303034d;
+  font: bold 20px Arial;
+  margin: 5px;
+  border-radius: 5px;
+  color: yellow;
+  background-color: #0303034d;
 }
+
 .restart {
   display: flex;
   justify-content: center;
@@ -145,21 +145,21 @@ header {
 #textForm {
   resize: none;
 }
-  
-  .button {
-    background-color: red;
-    color: white;
-    padding: 14px 20px;
-    margin: 8px;
-    border: none;
-    border-radius: 8px;
-    cursor: pointer;
-    font-size: large;
-  }
-  
-  .button:hover {
-    background-color:#2596dd;;
-  }
+
+.button {
+  background-color: red;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: large;
+}
+
+.button:hover {
+  background-color: #2596dd;
+}
 
 .card {
   margin-top: 20px;
@@ -169,7 +169,7 @@ header {
   align-items: center;
   width: 500px;
   transition: 0.7s;
-  gap: 15px; 
+  gap: 15px;
   border: 3px solid yellow;
   background-color: #000000d2;
   color: #fff;
@@ -180,7 +180,7 @@ header {
   cursor: pointer;
 }
 
-.background_card {
+.backgroundCard {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
@@ -189,29 +189,26 @@ header {
   background-size: cover;
 }
 
-.title_card {
+.titleCard {
   font-size: 35px;
   text-align: center;
+  color: yellow;
 }
 
 .description {
   text-align: center;
   margin: 5px;
+  font-size: 15px;
 }
 
 .dadosGaleria {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
-  height: 100%;   
+  height: 100%;
 }
 
-
-.logo_img_footer {
-  border-radius: 50%;
-}
-
-.footer_response {
+.footerResponse {
   display: flex;
   flex-grow: 1;
   justify-content: space-around;
@@ -227,17 +224,17 @@ header {
   align-items: center;
 }
 
-.link_title {
+.linkTitle {
   text-align: center;
   color: rgb(255, 255, 255);
   font-size: 20px;
 }
 
-.link_img {
+.linkImg {
   text-decoration: none;
 }
 
-.link_img img {
+.linkImg img {
   justify-content: center;
   border-radius: 50%;
   height: 50px;
@@ -256,17 +253,18 @@ header {
   background-color: #000000;
   color: white;
 }
- 
 
 .copyP {
-  font-family: 'Dancing Script', cursive;
+  font-family: "Dancing Script", cursive;
   font-size: xx-large;
 }
-
 
 .categoriaCard {
   font-size: xx-large;
   font-style: italic;
+  text-shadow: -1px 0 rgb(255, 251, 0), 0 1px rgb(234, 255, 0),
+    1px 0 rgb(225, 255, 0), 0 -1px rgb(251, 255, 0);
+  color: rgb(0, 0, 0);
 }
 
 .contacts {
@@ -276,22 +274,20 @@ header {
   margin-top: 50px;
 }
 
-.menu_footer {
+.menuFooter {
   margin-left: 5%;
   margin: 1%;
 }
 
-
 @media (max-width: 980px) {
-
-  .cabecalho {
+  /* .cabecalho {
     height: auto;
-  }
+  } */
 
-  .main_menu {
-    display:flex;
+  .mainMenu {
+    display: flex;
     flex-direction: column;
-    gap: 1px
+    gap: 1px;
   }
 
   .contacts {
@@ -302,73 +298,67 @@ header {
     justify-content: center;
   }
 
-  .menu_footer {
+  .menuFooter {
     display: flex;
     flex-direction: column;
-    justify-content:end;
+    justify-content: end;
     width: 70%;
     text-align: center;
   }
 
   .copy {
     text-align: center;
-    
   }
-
-  .video_container {
-    height: 450px;
+  .copyP {
+    font-family: "Dancing Script", cursive;
+    font-size: 18px;
   }
 }
 
 @media (max-width: 570px) {
 
-.cabecalho {
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-}
-
-.logo {
-  margin:0;
-  margin-top: 10px;  
-}
-
-.title:hover {
+  .title:hover {
+  padding-left: 10px;
   transition: 1.2s;
   cursor: pointer;
-  color: #FAD961;
-
+  color: rgb(245, 237, 0);
 }
 
-.video_container {
-  height: 350px;
-}
+  .logo {
+    margin: 0;
+    margin-top: 10px;
+  }
 
-.menu_footer {
-  width: 80%;
-}
+  .title:hover {
+    transition: 1.2s;
+    cursor: pointer;
+    color: #fad961;
+  }
 
-.iten_menu {
-  margin: 0;
-  padding: 0;
-  margin: 5px;
-  padding: 5px;
-  text-align: center;
-}
+  .menuFooter {
+    width: 80%;
+  }
 
-.contacts {
-  display: flex;
-  justify-content: space-around;
-}
+  .itenMenu {
+    margin: 0;
+    padding: 0;
+    margin: 5px;
+    padding: 5px;
+    text-align: center;
+  }
 
-.footer_response {
-  display: flex;
-  flex-direction: column;
-  gap: 50px;
-}
+  .contacts {
+    display: flex;
+    justify-content: space-around;
+  }
 
-.link_menu {
-  font-size: 100%;
-}
+  .footerResponse {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+  }
 
+  .linkMenu {
+    font-size: 100%;
+  }
 }
