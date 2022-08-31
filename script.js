@@ -3,7 +3,7 @@ const urlCard = document.getElementById("urlForm");
 const descricaoCard = document.getElementById("textForm");
 const categoriaCard = document.getElementById("categoria");
 const enviarCard = document.querySelector("#submit");
-
+let tagError = document.getElementById("error")
 
 
 function adicionarDadosNaPagina() {
@@ -11,11 +11,10 @@ function adicionarDadosNaPagina() {
   enviarCard.addEventListener("click", (enviar) => {
     enviar.preventDefault();
 
-    if (tituloCard.value === ""){
-        alert("Verifique os dados e tente novamente!!")
-        tituloCard.focus();
-        return false
-    }
+    if (tituloCard.value == ""){      
+      tagError.innerText = "O campo não pode estar vazio"
+      
+  }
 
     let addCard = document.createElement("div");
     addCard.innerHTML = `
